@@ -80,9 +80,15 @@ else:
 
 Replace the words in string
 list = input().split()
-for word in list:
-b= word.replace('G', '#').replace('e', 'G').replace('#', 'e')
-print(b)
+res = []
+for sub in list:
+    modified_word = sub.replace('G', '-').replace('e', 'G').replace('-', 'e')  
+    res.append(modified_word)  
+print(res)
+
+
+
+
 
 
 
