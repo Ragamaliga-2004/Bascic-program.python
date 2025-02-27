@@ -86,7 +86,45 @@ for sub in list:
     res.append(modified_word)  
 print(res)
 
+Write a Python program that takes a student’s percentage as input and prints their corresponding grade according to the following criteria: – 90% or above: A+ – 80-89%: A – 70-79%: B – 60-69%: C – Below 60%: Fail
+mark=int(input())
+if mark>=90:
+    print("A+")
+elif mark>=80 and mark<90:
+    print("A")
+elif mark>=70 and mark<80:
+    print("B+")
+elif mark>=60 and mark<70:
+    print("B")
+elif mark<60:
+    print("Fail")
 
+Write a Python program that takes three sides of a triangle as input and determines whether it forms an equilateral, isosceles, or scalene triangle.
+a=int(input())
+b=int(input())
+c=int(input())
+if a==b==c:
+    print("Equilateral")
+elif a==b or b==c or c==a:
+    print("Isoleces")
+else:
+    print("Scalene")
+
+
+Write a Python program using a while loop to count the number of digits in a given integer N
+n=int(input())
+n=abs(n)
+count=0
+while n>0:
+    n=n//10
+    count=count+1
+if count==0:
+    count=1
+print(count)
+
+
+
+    
 
 
 
